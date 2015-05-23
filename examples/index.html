@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HCM4all</title>
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap-theme.min.css" />
+  </head>
+  <body>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="text-center">Awesome AG</h1>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="http://www.hcm4all.com" role="button">Learn more</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="jobs">
+            <h2>Unsere Stellenangebote</h2>
+            <p>Aktuell haben wir <strong class="jobs-count"></strong> offene Stellen zu besetzen</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Position</th>
+                  <th>Ort</th>
+                  <th>Datum</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hide example">
+                  <td></td>
+                  <td><a href="" target="_blank"></a></td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="" class="btn btn-info btn-xs" target="_blank">Jetzt bewerben</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <pre class="pre-scrollable">
+          </pre>
+        </div>
+      </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="test_data.js"></script>
+<script src="../src/hcm4all.js"></script>
+
+<script id="script-1">
+var positionsReceived = function(positions, resp, status) {
+  jobs = positions.jobs();
+  $jobs = $('.jobs');
+  $jobs.find('.jobs-count').html(jobs.models.length);
+  $tableBody = $jobs.find('tbody');
+  $exampleRow = $tableBody.find('tr.example');
+  $.each(jobs.models, function() {
+    $newRow = $($exampleRow[0].cloneNode(true)).removeClass('hide example');
+    $newRow.find('td:nth-child(1)').html("#" + this.get('id'));
+    $newRow.find('td:nth-child(2) a').html(this.get('name')).attr('href', this.get('urls').show);
+    $newRow.find('td:nth-child(3)').html(this.get('location'));
+    $newRow.find('td:nth-child(4)').html(this.get('created_at'));
+    $newRow.find('td:nth-child(5) a').attr('href', this.get('urls').apply);
+    $tableBody.append($newRow);
+  });
+}
+
+HCM4all.config({baseUrl: 'http://bode.local.hcm4all.de:8080'});
+HCM4all.positions(positionsReceived);
+</script>
+<script>
+  $('pre').html($('#script-1').html());
+</script>
+  </body>
+</html>
