@@ -1,17 +1,19 @@
 {
-  "name": "hcm4all",
+  "name": "hcm4all-js",
   "version": "0.0.1",
-  "main": "hcm4all.js",
+  "homepage": "https://github.com/hcm4all/hcm4all-js",
+  "description": "HCM4all API JavaScript Client",
+  "main": "dist/hcm4all.js",
+  "authors": [
+    "HCM4all GmbH"
+  ],
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "public/lib",
-    "test",
-    "tests",
     "package.json",
-    "component.json",
-    "karma.*"
-  ],
-  "private": true
+    "component.json"
+  ]
 }

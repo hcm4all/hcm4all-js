@@ -1,7 +1,7 @@
 {
   "name": "hcm4all",
-  "title": "HCM4all Toolkit",
-  "description": "A really, really, REALLY tiny pub/sub implementation for jQuery.",
+  "title": "hcm4all-js",
+  "description": "HCM4all API JavaScript Client",
   "version": "0.0.1",
   "homepage": "https://github.com/hcm4all/hcm4all-js",
   "author": {
