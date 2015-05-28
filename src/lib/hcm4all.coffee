@@ -2,6 +2,7 @@ root.HCM4all = noop
 class root.HCM4all
   @defaults =
     baseUrl: 'http://demo.hcm4all.de'
+    language: 'de'
     apiVersion: 'v1'
 
   @config = (options = {}) ->

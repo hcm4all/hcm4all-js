@@ -10,7 +10,7 @@ class Collection
     @init()
   init: ->
   url: ->
-    HCM4all.baseUrl() + @api
+    HCM4all.baseUrl() + @api + "?l=#{HCM4all.defaults.language}"
 
   add: (attributes) ->
     @models.push new @model(attributes, @)

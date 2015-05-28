@@ -93,7 +93,7 @@
     Collection.prototype.init = function() {};
 
     Collection.prototype.url = function() {
-      return HCM4all.baseUrl() + this.api;
+      return HCM4all.baseUrl() + this.api + ("?l=" + HCM4all.defaults.language);
     };
 
     Collection.prototype.add = function(attributes) {
@@ -203,6 +203,7 @@
 
     HCM4all.defaults = {
       baseUrl: 'http://demo.hcm4all.de',
+      language: 'de',
       apiVersion: 'v1'
     };
 

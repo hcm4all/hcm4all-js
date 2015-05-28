@@ -1,4 +1,4 @@
-/*! hcm4all-js - v0.0.1 - 2015-05-23
+/*! hcm4all-js - v0.0.1 - 2015-05-28
 * https://github.com/hcm4all/hcm4all-js
 * Copyright (c) 2015 HCM4all GmbH; Licensed MIT */
 (function() {
@@ -96,7 +96,7 @@
     Collection.prototype.init = function() {};
 
     Collection.prototype.url = function() {
-      return HCM4all.baseUrl() + this.api;
+      return HCM4all.baseUrl() + this.api + ("?l=" + HCM4all.defaults.language);
     };
 
     Collection.prototype.add = function(attributes) {
@@ -206,6 +206,7 @@
 
     HCM4all.defaults = {
       baseUrl: 'http://demo.hcm4all.de',
+      language: 'de',
       apiVersion: 'v1'
     };
 
