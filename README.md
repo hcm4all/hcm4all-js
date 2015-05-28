@@ -1,6 +1,11 @@
 # HCM4all JavaScript Toolkit
 hcm4all.js provides simple access to the HCM4all JSON API. For further details on the API please have a look at the integration section of your installation.
 
+## Installation
+- Download the file `hcm4all.js` or `hcm4all.min.js` from the [latest release](https://github.com/hcm4all/hcm4all-js/releases/latest)
+- Use Bower `bower install hcm4all-js`
+- For Rails use `gem 'rails-assets-hcm4all-js'` with [Rails Assets](https://rails-assets.org/)
+
 ## Requirements
 Our toolkit has no dependencies. If you use jQuery, all ajax calls will be processed using jQuery. Otherwise there is a small ajax client attached.
 
