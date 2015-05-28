@@ -1,6 +1,6 @@
 {
   "name": "hcm4all-js",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "homepage": "https://github.com/hcm4all/hcm4all-js",
   "description": "HCM4all API JavaScript Client",
   "main": "dist/hcm4all.js",

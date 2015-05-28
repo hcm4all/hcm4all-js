@@ -1,4 +1,4 @@
-/*! hcm4all-js - v0.0.1 - 2015-05-28
+/*! hcm4all-js - v1.0.0 - 2015-05-28
 * https://github.com/hcm4all/hcm4all-js
 * Copyright (c) 2015 HCM4all GmbH; Licensed MIT */
 (function() {

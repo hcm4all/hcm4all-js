@@ -1,11 +1,8 @@
 {
   "name": "hcm4all-js",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "HCM4all API JavaScript Client",
   "main": "dist/hcm4all.js",
-  "scripts": {
-    "build": "uglifyjs hcm4all.js --mangle --source-map hcm4all-min.map -o hcm4all-min.js"
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:hcm4all/hcm4all-js.git"
@@ -29,8 +26,7 @@
   "files": [
     "hcm4all.js",
     "hcm4all-min.js",
-    "hcm4all-min.map",
-    "LICENSE"
+    "LICENSE.md"
   ],
   "contributors": [
     "Mathias Schneider <mathias@hiasinho.com>"

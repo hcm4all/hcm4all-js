@@ -2,7 +2,7 @@
   "name": "hcm4all",
   "title": "hcm4all-js",
   "description": "HCM4all API JavaScript Client",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "homepage": "https://github.com/hcm4all/hcm4all-js",
   "author": {
     "name": "HCM4all GmbH",
@@ -18,9 +18,5 @@
       "type": "MIT",
       "url": "https://github.com/hcm4all/hcm4all-js/blob/master/LICENSE.md"
     }
-  ],
-  "dependencies": {
-    "jquery": "1.7"
-  },
-  "keywords": ["pub", "sub", "pubsub", "event", "subscribe", "publish", "trigger"]
+  ]
 }
