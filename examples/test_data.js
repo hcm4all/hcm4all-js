@@ -86,6 +86,12 @@ HCM4allTestData.jobs = (function () {/*
         "show":"http://bode.local.hcm4all.de:8080/job_ads/2",
         "apply":"http://bode.local.hcm4all.de:8080/applications/new/2"
       },
+      "text1":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.",
+      "text2":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.",
+      "text3":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.",
+      "text4":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.",
+      "text5":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.",
+      "text6":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.",
       "created_at":"18.05.2015"
     }
   ]
